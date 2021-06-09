@@ -17,3 +17,43 @@ namespace ConsoleApp37
         }
     }
 }
+
+
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace ConsoleApp80
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] input = Console.ReadLine().Split();
+
+            Stack<string> expression = new Stack<string>();
+            for (int i = input.Length-1; i >=0; i--)
+            {
+                expression.Push(input[i]);
+            }
+
+            while (expression.Count>1)
+            {
+                int leftNunmber = int.Parse(expression.Pop());
+                string sign = expression.Pop();
+                int rightNumber = int.Parse(expression.Pop());
+
+                if (sign=="+")
+                {
+                    expression.Push((leftNunmber+rightNumber).ToString());
+                }
+                else if (sign == "-")
+                {
+                    expression.Push((leftNunmber - rightNumber).ToString());
+                }
+            }
+            Console.WriteLine(expression.Pop());
+        }
+    }
+}
