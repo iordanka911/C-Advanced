@@ -26,6 +26,8 @@ namespace ConsoleApp110
                 {
                     racksCount++;
                     cureentRackCapacity = boxCapacity-clothes;
+                     // currentRackCapacity=boxCapacity;
+                    // currentRackCapacity-=clothes;
                     
                 }
             }
