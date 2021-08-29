@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
-using System.Data;
+using System.Globalization;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace DictionariesAndSets
 {
@@ -11,7 +10,7 @@ namespace DictionariesAndSets
     {
         static void Main(string[] args)
         {
-
+            Thread.CurrentThread.CurrentCulture=CultureInfo.CreateSpecificCulture("en-GB");
             int n = int.Parse(Console.ReadLine());
             Dictionary<string, List<decimal>> studentsGrades = new 
                 Dictionary<string, List<decimal>>();
@@ -35,10 +34,10 @@ namespace DictionariesAndSets
                 Console.Write($"{student.Key} -> ");
                 foreach (var grade in student.Value)
                 {
-                    Console.Write($"{grade} ");
+                    Console.Write($"{grade:f2} ");
                 }
 
-                Console.WriteLine($"(avg: {student.Value.Average()})");
+                Console.WriteLine($"(avg: {student.Value.Average():f2})");
             }
         }
     }
