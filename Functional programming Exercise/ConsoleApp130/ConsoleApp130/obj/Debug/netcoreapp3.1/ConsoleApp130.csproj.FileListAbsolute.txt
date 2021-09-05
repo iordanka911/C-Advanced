@@ -1,0 +1,13 @@
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\obj\Debug\netcoreapp3.1\ConsoleApp130.csprojAssemblyReference.cache
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\obj\Debug\netcoreapp3.1\ConsoleApp130.AssemblyInfoInputs.cache
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\obj\Debug\netcoreapp3.1\ConsoleApp130.AssemblyInfo.cs
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\obj\Debug\netcoreapp3.1\ConsoleApp130.csproj.CoreCompileInputs.cache
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\bin\Debug\netcoreapp3.1\ConsoleApp130.exe
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\bin\Debug\netcoreapp3.1\ConsoleApp130.deps.json
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\bin\Debug\netcoreapp3.1\ConsoleApp130.runtimeconfig.json
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\bin\Debug\netcoreapp3.1\ConsoleApp130.runtimeconfig.dev.json
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\bin\Debug\netcoreapp3.1\ConsoleApp130.dll
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\bin\Debug\netcoreapp3.1\ConsoleApp130.pdb
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\obj\Debug\netcoreapp3.1\ConsoleApp130.dll
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\obj\Debug\netcoreapp3.1\ConsoleApp130.pdb
+C:\Users\Yordanka Jekova\source\repos\ConsoleApp130\ConsoleApp130\obj\Debug\netcoreapp3.1\ConsoleApp130.genruntimeconfig.cache
