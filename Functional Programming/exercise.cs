@@ -107,3 +107,29 @@ namespace FunctionalProgramming
 
 
 
+///////
+using System;
+using System.Linq;
+
+namespace FunctionalProgramming
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var numbersWithVat = Console.ReadLine()
+                  .Split(", ")
+                  .Select(double.Parse)
+                  .Select(x => 1.2 * x);
+
+            foreach (var number in numbersWithVat)
+            {
+                Console.WriteLine($"{number:f2}");
+            }
+        }
+               
+    }
+}
+
+
+
