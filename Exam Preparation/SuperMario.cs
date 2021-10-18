@@ -41,7 +41,7 @@ namespace SuperMario
                 switch (direction)
                 {
                     case 'W':
-                        if (currRow-1<0)
+                        if (currRow - 1 < 0)
                         {
                             continue;
                         }
@@ -51,7 +51,7 @@ namespace SuperMario
                         break;
 
                     case 'S':
-                        if (currRow + 1 <rows)
+                        if (currRow + 1 == rows)
                         {
                             continue;
                         }
@@ -71,7 +71,7 @@ namespace SuperMario
                         break;
 
                     case 'D':
-                        if (curCol+1==maze[currRow].Length)
+                        if (curCol + 1 == maze[currRow].Length)
                         {
                             continue;
                         }
@@ -79,31 +79,32 @@ namespace SuperMario
                         maze[currRow][curCol] = '-';
                         curCol++;
                         break;
-                    default:
-                        break;
+
                 }
-                if (lives<=0)
+                if (lives <= 0)
                 {
                     maze[currRow][curCol] = 'X';
                     break;
                 }
-                if (maze[currRow][curCol]=='B')
+                if (maze[currRow][curCol] == 'B')
                 {
                     lives -= 2;
-                    if (lives<=0)
+                    if (lives <= 0)
                     {
                         maze[currRow][curCol] = 'X';
                         break;
                     }
-                    else if (maze[currRow][curCol]=='P')
-                    {
-                        missionAcpmplished = true;
-                        maze[currRow][curCol] = '-';
-                        break;
-                    }
 
-                    maze[currRow][curCol] = 'M';
                 }
+                else if (maze[currRow][curCol] == 'P')
+                {
+                    missionAcpmplished = true;
+                    maze[currRow][curCol] = '-';
+                    break;
+                }
+
+                maze[currRow][curCol] = 'M';
+            }
 
                 //Mario saves the princess or dies
                 if (missionAcpmplished)
@@ -119,7 +120,7 @@ namespace SuperMario
                 {
                     Console.WriteLine(string.Join("", row));
                 }
-            }
+            
         }
     }
 }
