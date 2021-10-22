@@ -1,0 +1,69 @@
+1.  The Fight for Gondor
+Sauron’s army is marching towards Gondor. Vicious waves of orcs are getting ready to attack Aragorn’s people and make their way into the city.
+First, you will be given a number equal to the waves of orcs. On the second line you will be given the plates of the Aragorn's defense. Then, on each next line (for each wave), you receive the power of each orc  warrior. Additionally, on every third wave, the people build a new plate (extra line with a single integer) before the Sauron's warriors attack. In order to enter the city, the orcs have to destroy all the plates.
+Until there are no more plates or orcs, the last orc warrior attacks the first plate:
+• If the warrior's value is greater, he destroys the plate and lowers his value by the plate's value, then attacks the next plate, until his value reaches 0.
+• If the plate's value is greater, the warrior dies and the plate decreases its value by the warrior's value.
+• If their values are equal, the warrior dies and the plate is destroyed.
+Input
+• First line: integer- the number of waves
+• Second line: integers, representing the plates, separated by a single space.
+• For each wave: integers, representing the warrior orcs, separated by a single space.
+o   On every third wave, you will be given an extra line with a single integer, which will be the plate you need to add. [!] Add the plate before processing the attacks. [!]
+Output
+• On the first line of output – print if the orcs destroyed the Gondor's defense:
+o   True: "The orcs successfully destroyed the Gondor's defense."
+o   False: "The people successfully repulsed the orc's attack."
+• On the second line - print all plates or orcs left, separated by comma and a white space:
+o   If there are warriors: "Orcs left: {orc1}, {orc2}, {orc3}, …"
+o   If there are plates: "Plates left: {plate1}, {plate2}, {plate3}, …"
+Constraints
+• All of the given numbers will be valid integers in the range [1, 100].
+• Not all waves may be needed to destroy the defense.
+• There will always be a winning side, meaning either no orcs or plates left. 
+Examples
+Input   Output  Comment
+3
+10 20 30
+4 5 1
+10 5 5
+10 10 10
+4   The people successfully repulsed the orc's attack.
+Plates left: 4  • First wave (4 5 1):
+o   Orc (1) attacks Plate (10) => dies and plate is now 9.
+o   Orc (5) attacks Plate (9) => dies and plate is now 4.
+o   Orc (4) attacks Plater (4) => dies and plate is gone.
+• Second wave (10 5 5):
+o   Orc (5) attacks Plate (20) => dies and plate is now 15.
+o   Orc (5) attacks Plate (15) => dies and plate is now 10.
+o   Orc (10) attacks Plate (10) => dies and plate is gone.
+• Third wave (10 10 10):
+o   People build a new plate (4), plates are now: 30 4
+o   Orc (10) attacks Plate (30) => dies and plate is now 20.
+o   Orc (10) attacks Plate (20) => dies and plate is now 10.
+o   Orc (10) attacks Plate (10) => dies and plate is gone.
+• We have no more waves and one plate left (4) => see the output.
+5
+10 30 10
+3 3 4
+10 10 10
+5 5
+5
+7 6
+8 6 7   The orcs successfully destroyed the Gondor's defense.
+Orcs left: 1, 7 • First wave (3 3 4):
+o   Orc (4) attacks Plate (10) => dies and plate is now 6.
+o   Orc (3) attacks Plate (6) => dies and plate is now 3.
+o   Orc (3) attacks Plater (3) => dies and plate is gone.
+• Second wave (10 10 10):
+o   Orc (10) attacks Plate (30) => dies and plate is now 20.
+o   Orc (10) attacks Plate (20) => dies and plate is now 10.
+o   Orc (10) attacks Plate (10) => dies and plate is gone.
+• Third wave (5 5):
+o   People build a new plate (5), plates are now: 10 5
+o   Orc (5) attacks Plate (10) => dies and plate is now 5.
+o   Orc (5) attacks Plate (5) => dies and plate is gone.
+• Fourth wave (7 6):
+o   Orc (6) attacks Plate (5) => the orc is now 1 and the plate is gone.
+• We have no more plates, so the waves stop coming => see the output. Also, we stop the input. (8 6 7 is not proceeded, but is in the input because the waves are 5)
+ 
